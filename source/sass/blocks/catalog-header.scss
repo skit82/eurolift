@@ -1,0 +1,38 @@
+.catalog-header {
+  &__wrapper {
+    background-color: $color-gray-chateau;
+    padding-top: 89px;
+    padding-bottom: 78px;
+  }
+
+  &__decor {
+    position: absolute;
+    z-index: -11;
+    right: 0;
+    bottom: 0;
+    width: 725px;
+    height: 548px;
+    fill: none;
+  }
+
+  &__description {
+    margin-left: 111px;
+  }
+
+  &__title {
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    width: 62.26%;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 136%;
+
+    color: $color-default-white;
+
+    p {
+      margin: 0;
+    }
+  }
+}
