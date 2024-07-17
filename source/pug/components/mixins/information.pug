@@ -1,0 +1,8 @@
+mixin information(data)
+  section.information&attributes(attributes)
+    .container
+      h2.visually-hidden Ссылки на разделы страницы
+      ul.information__list
+        each item in data
+          li.information__item
+            a.information__link(href=item.link) !{item.title}

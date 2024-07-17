@@ -1,15 +1,19 @@
 .catalog-header {
+  margin-bottom: 50px;
+
   &__wrapper {
+    position: relative;
     background-color: $color-gray-chateau;
     padding-top: 89px;
     padding-bottom: 78px;
+    overflow: hidden;
   }
 
   &__decor {
     position: absolute;
-    z-index: -11;
+    // z-index: -11;
     right: 0;
-    bottom: 0;
+    top: -10px;
     width: 725px;
     height: 548px;
     fill: none;
