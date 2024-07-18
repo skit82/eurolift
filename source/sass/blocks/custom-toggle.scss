@@ -65,6 +65,13 @@
     color: transparent;
     -webkit-transition: all .3s ease 0s;
     transition: all .3s ease 0s;
+
+    svg {
+      width: 25px;
+      height: 22px;
+      fill: none;
+      stroke: currentColor;
+    }
   }
 
   &--checkbox {
