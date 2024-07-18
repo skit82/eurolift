@@ -7,6 +7,11 @@
     padding-top: 89px;
     padding-bottom: 78px;
     overflow: hidden;
+
+    @include vp-1099 {
+      padding-top: 64px;
+      padding-bottom: 58px;
+    }
   }
 
   &__decor {
@@ -17,14 +22,27 @@
     width: 725px;
     height: 548px;
     fill: none;
+
+    @include vp-1099 {
+      width: 519px;
+      height: 392px;
+    }
   }
 
   &__description {
     margin-left: 111px;
+
+    @include vp-1099 {
+      margin-left: 62px;
+    }
   }
 
   &__title {
     margin-bottom: 28px;
+
+    @include vp-1099 {
+      margin-bottom: 17px;
+    }
   }
 
   &__text {
@@ -34,6 +52,12 @@
     line-height: 136%;
 
     color: $color-default-white;
+
+    @include vp-1099 {
+      width: 66.41%;
+      font-size: 18px;
+      line-height: 139%;
+    }
 
     p {
       margin: 0;

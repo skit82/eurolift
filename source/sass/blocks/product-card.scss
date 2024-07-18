@@ -8,18 +8,29 @@
   }
 
   &__image {
-    margin: 0 auto;
+    margin: auto;
+
+    img {
+      mix-blend-mode: multiply;
+    }
   }
 
   &__name {
-    margin-top: auto;
+    margin-bottom: auto;
     padding-left: 30px;
-    padding-right: 5px;
+    padding-right: 30px;
     font-weight: 400;
     font-size: 18px;
     line-height: 139%;
 
     color: $color-default-black;
+
+    @include vp-1099 {
+      font-size: 15px;
+      line-height: 133%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
     p {
       margin: 0;

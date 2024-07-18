@@ -161,8 +161,8 @@ mixin catalog-main()
             .filter__caption
               strong Фильтры
             button.filter__btn-reset(type="reset")
-            span Очистить
-            +icon("icon-closes")
+              span Очистить
+              +icon("icon-closes")
           .filter__form-inner
             .filter__form-item
               .filter__form-top
@@ -264,3 +264,4 @@ mixin catalog-main()
           each item in productCard
             li.catalog-main__item
               +product-card(item)
+      +pagination()

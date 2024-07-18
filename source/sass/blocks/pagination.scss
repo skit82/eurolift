@@ -1,0 +1,36 @@
+.pagination {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__link {
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: #313033;
+    border: 1px solid $color-gray-chateau;
+
+    &.active {
+      border: 1px solid $color-monza;
+    }
+
+    &.ellipsis {
+      border: none;
+    }
+  }
+}

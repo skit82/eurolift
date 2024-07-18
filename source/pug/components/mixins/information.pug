@@ -6,3 +6,15 @@ mixin information(data)
         each item in data
           li.information__item
             a.information__link(href=item.link) !{item.title}
+      .information__bottom
+        .information__filter
+        .information__description
+          .information__name
+            p Показано товаров:
+          .information__number
+            p
+              span.information__number-start 64 из
+              span.information__number-end 64
+
+
+

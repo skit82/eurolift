@@ -1,0 +1,20 @@
+.load {
+  &__btn {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: $color-monza;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: color $trans-default, border-color $trans-default, opacity $trans-default;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        opacity: 0.5;
+      }
+    }
+  }
+}
