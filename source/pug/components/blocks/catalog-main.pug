@@ -1,0 +1,163 @@
+mixin catalog-main()
+  -
+    const productCard = [
+      {
+        img: {
+          path: "content",
+          name: "card-img1",
+          format: "png",
+          width: 220,
+          height: 213,
+        },
+        title: "Скоба такелажная прямая из нержавеющей стали Cartec C6XSH",
+      },
+      {
+        img: {
+          path: "content",
+          name: "card-img2",
+          format: "png",
+          width: 220,
+          height: 220,
+        },
+        title: "Шплинт пружинный нержавеющий Green Pin R-7854",
+      },
+      {
+        img: {
+          path: "content",
+          name: "card-img3",
+          format: "png",
+          width: 220,
+          height: 259,
+        },
+        title: "Скоба ROV пружинная Green Pin P-5367",
+      },
+      {
+        img: {
+          path: "content",
+          name: "card-img4",
+          format: "png",
+          width: 220,
+          height: 220,
+        },
+        title: "Скоба нержавеющая Green Pin R-7825 DIN 82103",
+      },
+      {
+        img: {
+          path: "content",
+          name: "card-img5",
+          format: "png",
+          width: 220,
+          height: 230,
+        },
+        title: "Скоба из сплава Crosby G-209A с винтовой нарезкой",
+      },
+      {
+        img: {
+          path: "content",
+          name: "card-img6",
+          format: "png",
+          width: 220,
+          height: 220,
+        },
+        title: "Скоба с винтовым штифтом Crosby G/S-2169",
+      },
+      {
+        img: {
+          path: "content",
+          name: "card-img7",
+          format: "png",
+          width: 220,
+          height: 213,
+        },
+        title: "Скоба такелажная прямая из нержавеющей стали Cartec C6XSH",
+      },
+      {
+        img: {
+          path: "content",
+          name: "card-img8",
+          format: "png",
+          width: 220,
+          height: 220,
+        },
+        title: "Шплинт пружинный нержавеющий Green Pin R-7854",
+      },
+      {
+        img: {
+          path: "content",
+          name: "card-img9",
+          format: "png",
+          width: 220,
+          height: 220,
+        },
+        title: "Скоба ROV пружинная Green Pin P-5367",
+      },
+      {
+        img: {
+          path: "content",
+          name: "card-img10",
+          format: "png",
+          width: 220,
+          height: 222,
+        },
+        title: "Скоба нержавеющая Green Pin R-7825 DIN 82103",
+      },
+      {
+        img: {
+          path: "content",
+          name: "card-img11",
+          format: "png",
+          width: 220,
+          height: 158,
+        },
+        title: "Скоба из сплава Crosby G-209A с винтовой нарезкой",
+      },
+      {
+        img: {
+          path: "content",
+          name: "card-img12",
+          format: "png",
+          width: 220,
+          height: 220,
+        },
+        title: "Скоба с винтовым штифтом Crosby G/S-2169",
+      },
+      {
+        img: {
+          path: "content",
+          name: "card-img13",
+          format: "png",
+          width: 220,
+          height: 213,
+        },
+        title: "Скоба такелажная прямая из нержавеющей стали Cartec C6XSH",
+      },
+      {
+        img: {
+          path: "content",
+          name: "card-img14",
+          format: "png",
+          width: 220,
+          height: 220,
+        },
+        title: "Шплинт пружинный нержавеющий Green Pin R-7854",
+      },
+      {
+        img: {
+          path: "content",
+          name: "card-img15",
+          format: "png",
+          width: 220,
+          height: 259,
+        },
+        title: "Скоба ROV пружинная Green Pin P-5367",
+      },
+    ]
+
+  section.catalog-main
+    .filter
+    .inner-container
+      .catalog-main__section
+        ul.catalog-main__list
+          each item in productCard
+            li.catalog-main__item
+              product-card(item)
