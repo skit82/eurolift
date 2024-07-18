@@ -1,0 +1,10 @@
+.filter {
+  width: 300px;
+  flex-shrink: 0;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}

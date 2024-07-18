@@ -154,10 +154,21 @@ mixin catalog-main()
     ]
 
   section.catalog-main
-    .filter
+    aside.filter
+      .filter__box
+        form(action="#", method="get").filter__form
+          .filter__form-inner
+            .filter__form-item
+              .filter__form-top
+                .filter__form-name
+                  p Форма
+                +icon("icon-filter", 12, 8)
+              ul.filter__list
+                li.filter__item
+                  +custom-toggle({inputLabel: "Прямые", inputType: "checkbox", inputName: "shape"})
     .inner-container
       .catalog-main__section
         ul.catalog-main__list
           each item in productCard
             li.catalog-main__item
-              product-card(item)
+              +product-card(item)
