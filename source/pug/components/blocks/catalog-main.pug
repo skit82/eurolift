@@ -157,7 +157,7 @@ mixin catalog-main()
     aside.filter.aside-section(data-aside="true")
       .filter__box
         button.filter__btn-close(data-aside-close="true") Закрыть
-        form(action="#", method="get").filter__form
+        form.filter__form(action="#", method="get")
           .filter__header
             .filter__caption
               strong Фильтры
@@ -169,7 +169,7 @@ mixin catalog-main()
               .filter__form-top
                 .filter__form-name
                   p Форма
-                button(type="button").filter__button
+                button.filter__button(type="button")
                   +icon("icon-filter", 12, 8)
               ul.filter__list
                 li.filter__item
@@ -180,7 +180,7 @@ mixin catalog-main()
               .filter__form-top
                 .filter__form-name
                   p Тип соединения
-                button(type="button").filter__button
+                button.filter__button(type="button")
                   +icon("icon-filter", 12, 8)
               ul.filter__list
                 li.filter__item
@@ -191,7 +191,7 @@ mixin catalog-main()
               .filter__form-top
                 .filter__form-name
                   p Материал и покрытие
-                button(type="button").filter__button
+                button.filter__button(type="button")
                   +icon("icon-filter", 12, 8)
               ul.filter__list
                 li.filter__item
@@ -210,7 +210,7 @@ mixin catalog-main()
               .filter__form-top
                 .filter__form-name
                   p Производитель
-                button(type="button").filter__button
+                button.filter__button(type="button")
                   +icon("icon-filter", 12, 8)
               ul.filter__list
                 li.filter__item
@@ -223,7 +223,7 @@ mixin catalog-main()
               .filter__form-top
                 .filter__form-name
                   p Грузоподъемность, тонн
-                button(type="button").filter__button
+                button.filter__button(type="button")
                   +icon("icon-filter", 12, 8)
               ul.filter__list
                 li.filter__item
@@ -240,15 +240,14 @@ mixin catalog-main()
               .filter__form-top
                 .filter__form-name
                   p Класс прочности
-                button(type="button").filter__button
+                button.filter__button(type="button")
                   +icon("icon-filter", 12, 8)
             .filter__form-item
               .filter__form-top
                 .filter__form-name
                   p Назначение
-                button(type="button").filter__button
+                button.filter__button(type="button")
                   +icon("icon-filter", 12, 8)
-
               ul.filter__list
                 li.filter__item
                   +custom-toggle({inputLabel: "общее", inputType: "checkbox", inputName: "connection"})

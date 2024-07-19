@@ -53,18 +53,14 @@
     height: 25px;
     border: 1px solid $color-gray-chateau;
     background-color: $color-default-white;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
+
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+
     align-items: center;
     color: transparent;
-    -webkit-transition: all .3s ease 0s;
-    transition: all .3s ease 0s;
+
+    transition: all 0.3s ease 0s;
 
     svg {
       width: 25px;

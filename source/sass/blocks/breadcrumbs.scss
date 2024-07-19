@@ -36,14 +36,12 @@
   }
 }
 
-.breadcrumbs__link {
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-}
 
 .breadcrumbs__link {
   display: inline;
   color: $color-gray-chateau;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
 
   transition: color $trans-default;
 
