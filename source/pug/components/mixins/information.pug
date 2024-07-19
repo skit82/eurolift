@@ -8,6 +8,10 @@ mixin information(data)
             a.information__link(href=item.link) !{item.title}
       .information__bottom
         .information__filter
+          button.information__filter-btn(type="button", data-aside-chow="true")
+            +icon("icon-decor-filter", 25, 25)
+            span Фильтры
+            +icon("icon-plus", 15, 15)
         .information__description
           .information__name
             p Показано товаров:

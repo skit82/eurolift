@@ -154,8 +154,9 @@ mixin catalog-main()
     ]
 
   section.catalog-main
-    aside.filter
+    aside.filter.aside-section(data-aside="true")
       .filter__box
+        button.filter__btn-close(data-aside-close="true") Закрыть
         form(action="#", method="get").filter__form
           .filter__header
             .filter__caption

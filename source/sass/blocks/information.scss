@@ -102,4 +102,30 @@
   &__number-start {
     margin: 0 5px;
   }
+
+  &__filter-btn {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-mirage;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+
+    display: none;
+    align-items: center;
+    width: 170px;
+    height: 25px;
+    justify-content: space-between;
+    cursor: pointer;
+
+    @include vp-1099 {
+      display: flex;
+    }
+  }
 }
