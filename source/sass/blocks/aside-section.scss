@@ -13,11 +13,19 @@
     pointer-events: none;
     -webkit-transition: all .1s ease 0s;
     transition: all .1s ease 0s;
+  }
+}
 
-    .show {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: all;
-    }
+.aside-section.show {
+  @include vp-1099 {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+
+.aside-section.show .filter__box {
+  @include vp-1099 {
+    transform: translateX(0);
   }
 }

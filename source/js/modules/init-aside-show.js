@@ -6,7 +6,7 @@ function initAsideShow() {
   if (buttonShow && aside) {
     buttonShow.addEventListener('click', e => {
       e.preventDefault();
-      bodyLock();
+      // bodyLock();
       aside.classList.toggle('show');
     });
 
@@ -15,7 +15,7 @@ function initAsideShow() {
         !e.target.closest('.filter__box') &&
         !e.target.classList.contains('filter__box')
       ) {
-        bodyUnlock(300);
+        // bodyUnlock(300);
         aside.classList.remove('show');
       }
     });
@@ -24,8 +24,10 @@ function initAsideShow() {
   if (buttonClose) {
     buttonClose.addEventListener('click', e => {
       e.preventDefault();
-      bodyUnlock(300);
+      // bodyUnlock(300);
       aside.classList.remove('show');
     });
   }
 }
+
+export {initAsideShow}

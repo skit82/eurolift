@@ -1,6 +1,5 @@
 .filter {
-  width: 300px;
-  flex-shrink: 0;
+  flex: 0 0 300;
 
   &__header {
     display: flex;
@@ -35,6 +34,10 @@
 
   &__btn-close {
     display: none;
+
+    @include  vp-1099 {
+      display: block;
+    }
   }
 
   &__list {
