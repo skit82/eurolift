@@ -1,7 +1,7 @@
 function initFilterActive() {
 
   var filter = document.querySelector(".filter");
-  var filterOpen = document.querySelector(".filter__open");
+  // var filterOpen = document.querySelector(".filter__open");
   var filterOptions = document.querySelectorAll(".filter__list");
   var filterButtons = document.querySelectorAll(".filter__button");
   var filterTitles = document.querySelectorAll(".filter__form-name p");
@@ -19,15 +19,18 @@ function initFilterActive() {
     element.classList.add(selector);
   };
 
-  if (filter) {
-    if (mediaTablet.matches) {
-      addClass(filter, "filter--disable");
-    }
+  // if (filter) {
+    // if (mediaTablet.matches) {
+      // addClass(filter, "filter--disable");
+    // }
 
-    filterOpen.addEventListener("click", function () {
-      toggleClass(filter, "filter--disable");
-    });
-  }
+    // if (filterOpen) {
+      // filterOpen.addEventListener("click", e => {
+        // e.preventDefault();
+        // toggleClass(filter, "filter--disable");
+      // });
+    // }
+  // }
 
   var hideOptions = function () {
     for (var i = 1; i < filterOptions.length; i++) {
@@ -43,7 +46,7 @@ function initFilterActive() {
   if (filter) {
     filterTitles.forEach(function (title, i) {
       title.addEventListener("click", function () {
-        toggleClass(filterOptions[i], "filter__options--active");
+        toggleClass(filterOptions[i], "filter__list--active");
         toggleClass(filterButtons[i], "filter__button--active");
       });
     });
@@ -51,7 +54,7 @@ function initFilterActive() {
     filterButtons.forEach(function (button, i) {
       button.addEventListener("click", function () {
         toggleClass(button, "filter__button--active");
-        toggleClass(filterOptions[i], "filter__options--active");
+        toggleClass(filterOptions[i], "filter__list--active");
       });
     });
   }

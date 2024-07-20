@@ -173,7 +173,7 @@ mixin catalog-main()
                   +icon("icon-filter", 12, 8)
               ul.filter__list.filter__list--active
                 li.filter__item
-                  +custom-toggle({inputLabel: "Прямые", inputType: "checkbox", inputName: "shape"})
+                  +custom-toggle({inputLabel: "Прямые", inputNumber: "43", inputType: "checkbox", inputName: "shape"})
                 li.filter__item
                   +custom-toggle({inputLabel: "Омегообразные", inputType: "checkbox", inputName: "shape"})
             .filter__form-item
@@ -227,7 +227,7 @@ mixin catalog-main()
                   +icon("icon-filter", 12, 8)
               ul.filter__list.filter__list--active
                 li.filter__item
-                  +custom-toggle({inputLabel: "0,33", inputType: "checkbox", inputName: "connection"})
+                  +custom-toggle({inputLabel: "0,33", inputNumber: "", inputType: "checkbox", inputName: "connection"})
                 li.filter__item
                   +custom-toggle({inputLabel: "0,5", inputType: "checkbox", inputName: "connection"})
                 li.filter__item
@@ -242,6 +242,7 @@ mixin catalog-main()
                   p Класс прочности
                 button.filter__button.filter__button--active(type="button")
                   +icon("icon-filter", 12, 8)
+              ul.filter__list.filter__list--active
             .filter__form-item
               .filter__form-top
                 .filter__form-name

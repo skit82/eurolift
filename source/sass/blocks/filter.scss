@@ -41,9 +41,14 @@
   }
 
   &__list {
+    display: none;
     list-style: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+
+
+    margin-bottom: 74px;
   }
 
   &__item:not(:last-child) {
@@ -52,10 +57,6 @@
 
   &__form-item {
     border-top: 2px solid $color-monza;
-
-    &:not(:last-child) {
-      margin-bottom: 74px;
-    }
   }
 
   &__form-inner {
@@ -92,6 +93,28 @@
     cursor: pointer;
     padding-top: 16px;
     padding-bottom: 25px;
+
+    svg {
+      transform: rotate(-180deg);
+      transition: transform $trans-default;
+    }
+  }
+
+  &__btn-close {
+
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $color-mirage;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transform: translateX(-65px);
+
+    margin-bottom: 46px;
   }
 
   &__btn-reset {
@@ -108,7 +131,7 @@
     padding: 0;
     margin: 0;
     color: $color-monza;
-    transition: color $trans-default, border-color $trans-default, opacity $trans-default;
+    transition: font-weight $trans-default, color $trans-default, border-color $trans-default, opacity $trans-default;
     cursor: pointer;
 
     svg {
@@ -117,13 +140,27 @@
       flex-shrink: 0;
       margin-left: 2px;
       margin-top: 2px;
+      stroke-width: 1px;
     }
 
     @media (hover: hover), screen and (min-width: 0\0) {
       &:hover,
       &:focus {
-        opacity: 0.5;
+        font-weight: 700;
+        stroke-width: 2px;
       }
     }
+  }
+
+  &__button--active {
+    display: block;
+
+    svg {
+      transform: rotate(0deg);
+    }
+  }
+
+  &__list--active {
+    display: block;
   }
 }
