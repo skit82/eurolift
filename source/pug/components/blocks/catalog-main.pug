@@ -169,9 +169,9 @@ mixin catalog-main()
               .filter__form-top
                 .filter__form-name
                   p Форма
-                button.filter__button(type="button")
+                button.filter__button.filter__button--active(type="button")
                   +icon("icon-filter", 12, 8)
-              ul.filter__list
+              ul.filter__list.filter__list--active
                 li.filter__item
                   +custom-toggle({inputLabel: "Прямые", inputType: "checkbox", inputName: "shape"})
                 li.filter__item
@@ -180,9 +180,9 @@ mixin catalog-main()
               .filter__form-top
                 .filter__form-name
                   p Тип соединения
-                button.filter__button(type="button")
+                button.filter__button.filter__button--active(type="button")
                   +icon("icon-filter", 12, 8)
-              ul.filter__list
+              ul.filter__list.filter__list--active
                 li.filter__item
                   +custom-toggle({inputLabel: "Винтовые", inputType: "checkbox", inputName: "connection"})
                 li.filter__item
@@ -191,9 +191,9 @@ mixin catalog-main()
               .filter__form-top
                 .filter__form-name
                   p Материал и покрытие
-                button.filter__button(type="button")
+                button.filter__button.filter__button--active(type="button")
                   +icon("icon-filter", 12, 8)
-              ul.filter__list
+              ul.filter__list.filter__list--active
                 li.filter__item
                   +custom-toggle({inputLabel: "Оцинкованная сталь", inputType: "checkbox", inputName: "connection"})
                 li.filter__item
@@ -210,9 +210,9 @@ mixin catalog-main()
               .filter__form-top
                 .filter__form-name
                   p Производитель
-                button.filter__button(type="button")
+                button.filter__button.filter__button--active(type="button")
                   +icon("icon-filter", 12, 8)
-              ul.filter__list
+              ul.filter__list.filter__list--active
                 li.filter__item
                   +custom-toggle({inputLabel: "Green Pin", inputType: "checkbox", inputName: "connection"})
                 li.filter__item
@@ -223,9 +223,9 @@ mixin catalog-main()
               .filter__form-top
                 .filter__form-name
                   p Грузоподъемность, тонн
-                button.filter__button(type="button")
+                button.filter__button.filter__button--active(type="button")
                   +icon("icon-filter", 12, 8)
-              ul.filter__list
+              ul.filter__list.filter__list--active
                 li.filter__item
                   +custom-toggle({inputLabel: "0,33", inputType: "checkbox", inputName: "connection"})
                 li.filter__item
@@ -240,15 +240,15 @@ mixin catalog-main()
               .filter__form-top
                 .filter__form-name
                   p Класс прочности
-                button.filter__button(type="button")
+                button.filter__button.filter__button--active(type="button")
                   +icon("icon-filter", 12, 8)
             .filter__form-item
               .filter__form-top
                 .filter__form-name
                   p Назначение
-                button.filter__button(type="button")
+                button.filter__button.filter__button--active(type="button")
                   +icon("icon-filter", 12, 8)
-              ul.filter__list
+              ul.filter__list.filter__list--active
                 li.filter__item
                   +custom-toggle({inputLabel: "общее", inputType: "checkbox", inputName: "connection"})
                 li.filter__item

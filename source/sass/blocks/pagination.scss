@@ -24,6 +24,8 @@
     text-align: center;
     color: #313033;
     border: 1px solid $color-gray-chateau;
+    transition: color $trans-default, border-color $trans-default, opacity $trans-default;
+    cursor: pointer;
 
     &.active {
       border: 1px solid $color-monza;
@@ -31,6 +33,13 @@
 
     &.ellipsis {
       border: none;
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        border: 1px solid $color-mirage;
+      }
     }
   }
 }

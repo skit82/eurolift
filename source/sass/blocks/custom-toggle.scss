@@ -136,8 +136,9 @@
   }
 
   input:checked + .custom-toggle__icon {
-    border: 1.5px solid #2c39f2;
+    // border: 1.5px solid #2c39f2;
     background-color: $color-monza;
+    opacity: 1;
 
     &::before {
       background-color: #2c39f2;

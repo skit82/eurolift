@@ -8,12 +8,12 @@
     border: none;
     outline: none;
     cursor: pointer;
-    transition: color $trans-default, border-color $trans-default, opacity $trans-default;
+    transition: font-weight $trans-font;
 
     @media (hover: hover), screen and (min-width: 0\0) {
       &:hover,
       &:focus {
-        opacity: 0.5;
+        font-weight: 700;
       }
     }
   }
